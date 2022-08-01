@@ -1,0 +1,34 @@
+{
+    "name": "kent013/artisan-command-pseudo-ca",
+    "description": "An artisan command to generate usecase / request / resource classes to implement pseudo clean architecture.",
+    "keywords": ["artisan", "laravel", "usecase", "make"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kentaro ISHITOYA",
+            "email": "kentaro.ishitoya@gmail.com",
+            "homepage": "https://github.com/kent013/"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.0 || ^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtisanCommandPseudoCA\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArtisanCommandPseudoCA\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "nunomaduro/larastan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.9",
+        "orchestra/testbench": "^7.6"
+    }
+}

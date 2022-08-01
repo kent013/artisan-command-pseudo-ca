@@ -1,0 +1,10 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+parameters:
+    level: max
+    paths:
+        - src
+    parallel:
+        processTimeout: 300.0
+    # relative path to this file(phpstan.neon)
+    tmpDir: ./tmp/phpstan

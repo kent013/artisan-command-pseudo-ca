@@ -1,0 +1,7 @@
+{
+    "php-cs-fixer.executablePath": "${workspaceFolder}/vendor/bin/php-cs-fixer",
+    "phpstan.projectFile": "",
+    "phpstan.path": "./vendor/bin/phpstan",
+    "php-cs-fixer.pathMode": "override",
+    "php-cs-fixer.onsave": true,
+}
