@@ -14,7 +14,7 @@ class PseudoCAMakeCommand extends Command
      *
      * @var string
      */
-    protected $name = 'make:pseudoca:all {name} {--force}';
+    protected $signature = 'make:pseudoca {name} {--force}';
 
     /**
      * The console command description.
