@@ -94,12 +94,6 @@ class PostContoller
 
 ## Installation
 
-Until development status, you need to add repository.
-```
-composer config repositories.kent013 vcs https://github.com/kent013/artisan-command-pseudo-ca
-```
-
-Then run require.
 ```
 composer require --dev kent013/artisan-command-pseudo-ca
 ```
