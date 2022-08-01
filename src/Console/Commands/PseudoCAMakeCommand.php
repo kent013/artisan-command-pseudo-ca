@@ -14,7 +14,7 @@ class PseudoCAMakeCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:pseudoca {name} {--force?}';
+    protected $signature = 'make:pseudoca {name} {--force}';
 
     /**
      * The console command description.
@@ -35,16 +35,16 @@ class PseudoCAMakeCommand extends Command
             exit;
         }
         $this->call('make:pseudoca:usecase', [
-            'name' => $name . config('pseudo.usecase_suffix'),
-            'force' => $this->option('force')
+            'name' => $name . config('pseudoca.usecase_suffix'),
+            '--force' => $this->option('force')
         ]);
         $this->call('make:pseudoca:resource', [
-            'name' => $name . config('pseudo.resource_suffix'),
-            'force' => $this->option('force')
+            'name' => $name . config('pseudoca.resource_suffix'),
+            '--force' => $this->option('force')
         ]);
         $this->call('make:pseudoca:request', [
-            'name' => $name . config('pseudo.request_suffix'),
-            'force' => $this->option('force')
+            'name' => $name . config('pseudoca.request_suffix'),
+            '--force' => $this->option('force')
         ]);
     }
 }
