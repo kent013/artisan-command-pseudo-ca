@@ -36,7 +36,7 @@ class ResourceMakeCommand extends Command
      */
     protected function getStub()
     {
-        return __DIR__ . '/../stubs/resource.stub';
+        return __DIR__ . '/stubs/resource.stub';
     }
 
     /**

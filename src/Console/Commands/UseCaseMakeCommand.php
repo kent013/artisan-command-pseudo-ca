@@ -48,7 +48,7 @@ class UseCaseMakeCommand extends Command
      */
     protected function getStub()
     {
-        return __DIR__ . '/../stubs/usecase.stub';
+        return __DIR__ . '/stubs/usecase.stub';
     }
 
     /**

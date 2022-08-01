@@ -36,7 +36,7 @@ class RequestMakeCommand extends Command
      */
     protected function getStub()
     {
-        return __DIR__ . '/../stubs/request.stub';
+        return __DIR__ . '/stubs/request.stub';
     }
 
     /**
