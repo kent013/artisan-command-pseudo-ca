@@ -13,6 +13,8 @@ class ServiceProvider extends LaravelServiceProvider
     {
         $this->commands([
             Console\Commands\UseCaseMakeCommand::class,
+            Console\Commands\RequestMakeCommand::class,
+            Console\Commands\ResourceMakeCommand::class,
         ]);
     }
 
@@ -35,6 +37,8 @@ class ServiceProvider extends LaravelServiceProvider
     {
         return [
             Console\Commands\UseCaseMakeCommand::class,
+            Console\Commands\RequestMakeCommand::class,
+            Console\Commands\ResourceMakeCommand::class,
         ];
     }
 }
