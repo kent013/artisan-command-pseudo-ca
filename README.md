@@ -3,11 +3,14 @@ Artisan make command to generate usecase / request / resource classes to impleme
 
 This command is based on the article about **pseudo** clean architecture.
 
-5年間 Laravel を使って辿り着いた，全然頑張らない「なんちゃってクリーンアーキテクチャ」という落としどころ
-https://zenn.dev/mpyw/articles/ce7d09eb6d8117 (Japanese Only)
+- 5年間 Laravel を使って辿り着いた，全然頑張らない「なんちゃってクリーンアーキテクチャ」という落としどころ
+    - https://zenn.dev/mpyw/articles/ce7d09eb6d8117 (Japanese Only)
+    - written by mpyw (https://zenn.dev/mpyw)
 
+## Pseudo / Relaxed Clean Architecture
 
 **pseudo** clean architecture for laravel is a relaxed domain modelling architecture which consists with `Request`, `Resource` and `Usecase`.
+Again this architecture is proposed by mpyw. And I'm using this architecture in my several project so that I just need a class generator.
 
 `Request` is like
 
