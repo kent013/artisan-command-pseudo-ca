@@ -13,7 +13,7 @@ class RequestMakeCommand extends Command
      *
      * @var string
      */
-    protected $name = 'make:usecase:request';
+    protected $name = 'make:pseudoca:request';
 
     /**
      * The console command description.
