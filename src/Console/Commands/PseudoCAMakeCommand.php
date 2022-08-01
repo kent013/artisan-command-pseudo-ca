@@ -34,15 +34,15 @@ class PseudoCAMakeCommand extends Command
             $this->error('name of the class must be string.');
             exit;
         }
-        $this->call('make:usecase:usecase', [
+        $this->call('make:pseudoca:usecase', [
             'name' => $name . config('pseudo.usecase_suffix'),
             'force' => $this->option('force')
         ]);
-        $this->call('make:usecase:resource', [
+        $this->call('make:pseudoca:resource', [
             'name' => $name . config('pseudo.resource_suffix'),
             'force' => $this->option('force')
         ]);
-        $this->call('make:usecase:request', [
+        $this->call('make:pseudoca:request', [
             'name' => $name . config('pseudo.request_suffix'),
             'force' => $this->option('force')
         ]);
