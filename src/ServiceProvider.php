@@ -12,6 +12,7 @@ class ServiceProvider extends LaravelServiceProvider
     public function register(): void
     {
         $this->commands([
+            Console\Commands\PseudoCAMakeCommand::class,
             Console\Commands\UseCaseMakeCommand::class,
             Console\Commands\RequestMakeCommand::class,
             Console\Commands\ResourceMakeCommand::class,
@@ -36,6 +37,7 @@ class ServiceProvider extends LaravelServiceProvider
     public function provides(): array
     {
         return [
+            Console\Commands\PseudoCAMakeCommand::class,
             Console\Commands\UseCaseMakeCommand::class,
             Console\Commands\RequestMakeCommand::class,
             Console\Commands\ResourceMakeCommand::class,

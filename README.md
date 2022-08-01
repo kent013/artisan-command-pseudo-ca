@@ -142,3 +142,12 @@ php artisan make:pseudoca:resource LoginResource
 ```
 
 will generates `LoginResource` class under root namespace suffixed with `PSEUDOCA_RESOURCE_NS`. Default namespace is `\Http\Resources`.
+
+
+### Generate PseudoCA classes at once
+
+```
+php artisan make:pseudoca Login
+```
+
+will generates `LoginResource`, `LoginRequest` and `LoginUsecase`.

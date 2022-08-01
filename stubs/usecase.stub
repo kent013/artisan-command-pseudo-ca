@@ -6,13 +6,7 @@ namespace DummyNamespace;
 
 class DummyClass
 {
-    /**
-     *
-     *
-     * @return void
-     */
     public function __invoke(): void
     {
-        //
     }
 }
