@@ -10,7 +10,9 @@ This command is based on the article about **pseudo** clean architecture.
 ## Pseudo / Relaxed Clean Architecture
 
 **pseudo** clean architecture for laravel is a relaxed domain modelling architecture which consists with `Request`, `Resource` and `Usecase`.
-Again this architecture is proposed by mpyw. And I'm using this architecture in my several project so that I just need a class generator.
+Again this architecture is proposed by mpyw. 
+
+And I'm using this architecture in my several projects. so that I just need a class generator.
 
 `Request` is like
 
