@@ -24,8 +24,8 @@ class ServiceProvider extends LaravelServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__ . '/../config/pseudoca.php' => config_path('pseudoca.php'),
-        ]);
+            __DIR__ . '/../config/pseudoca.php' => config_path('pseudoca.php')
+        ], 'pseudoca');
     }
 
     /**
