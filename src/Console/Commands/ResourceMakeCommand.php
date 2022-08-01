@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace ArtisanCommandPseudoCA\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand as Command;
+use Symfony\Component\Console\Input\InputOption;
 
 class ResourceMakeCommand extends Command
 {
@@ -20,7 +21,7 @@ class ResourceMakeCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Create a new Request class';
+    protected $description = 'Create a new Resource class';
 
     /**
      * The type of class being generated.
@@ -30,13 +31,24 @@ class ResourceMakeCommand extends Command
     protected $type = 'Resource';
 
     /**
+     * @return bool|void|null
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     */
+    public function handle()
+    {
+        if (parent::handle() === false && !$this->option('force')) {
+            return;
+        }
+    }
+
+    /**
      * Get the stub file for the generator.
      *
      * @return string
      */
     protected function getStub()
     {
-        return __DIR__ . '/stubs/resource.stub';
+        return __DIR__ . '/../../../stubs/resource.stub';
     }
 
     /**
@@ -47,6 +59,18 @@ class ResourceMakeCommand extends Command
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\Http\Requests';
+        return $rootNamespace . config('pseudoca.resource_namespace');
+    }
+
+    /**
+     * Get the console command options.
+     *
+     * @return array<int, array<int, int|string|null>>
+     */
+    protected function getOptions(): array
+    {
+        return [
+            ['force', null, InputOption::VALUE_NONE, 'Create the class even if the UseCase already exists'],
+        ];
     }
 }

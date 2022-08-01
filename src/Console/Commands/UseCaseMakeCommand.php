@@ -48,7 +48,7 @@ class UseCaseMakeCommand extends Command
      */
     protected function getStub()
     {
-        return __DIR__ . '/stubs/usecase.stub';
+        return __DIR__ . '/../../../stubs/usecase.stub';
     }
 
     /**
@@ -59,13 +59,13 @@ class UseCaseMakeCommand extends Command
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\UseCases';
+        return $rootNamespace . config('pseudoca.usecase_namespace');
     }
 
     /**
      * Get the console command options.
      *
-     * @return array<int, array<int, null|int|string>>
+     * @return array<int, array<int, int|string|null>>
      */
     protected function getOptions(): array
     {
