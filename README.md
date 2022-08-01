@@ -110,10 +110,12 @@ php artisan vendor:publish --tag="pseudoca"
 ## Configuration
 
 ```
-PSEUDOCA_USECASE_NS='\UseCase'
-PSEUDOCA_REQUEST_NS='\Http\Requests'
-PSEUDOCA_RESOURCE_NS='\Http\Resources'
+PSEUDOCA_USECASE_NS="\UseCases"
+PSEUDOCA_REQUEST_NS="\Http\Requests"
+PSEUDOCA_RESOURCE_NS="\Http\Resources"
 ```
+
+If you want to change namespaces, please add above lines in your `.env` file and change values.
 
 ## Generate Usecase
 

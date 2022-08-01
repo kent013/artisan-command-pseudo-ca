@@ -10,7 +10,7 @@ return [
     |
     */
 
-    'usecase_namespace' => env('PSEUDOCA_USECASE_NS', '\UseCase'),
+    'usecase_namespace' => env('PSEUDOCA_USECASE_NS', '\UseCases'),
     'request_namespace' => env('PSEUDOCA_REQUEST_NS', '\Http\Requests'),
     'resource_namespace' => env('PSEUDOCA_RESOURCE_NS', '\Http\Resources'),
 ];
