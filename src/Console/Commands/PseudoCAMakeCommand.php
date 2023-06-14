@@ -30,7 +30,7 @@ class PseudoCAMakeCommand extends Command
     public function handle()
     {
         $name = $this->argument('name');
-        if(is_string($name) === false){
+        if(!is_string($name)){
             $this->error('name of the class must be string.');
             exit;
         }
